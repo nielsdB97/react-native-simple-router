@@ -244,7 +244,9 @@ class Router extends React.Component {
   }
 
   configureScene(route) {
-    return route.sceneConfig || this.props.sceneConfig || Navigator.SceneConfigs.FloatFromRight;
+    const sceneConfig = Navigator.SceneConfigs.FloatFromRight;
+    sceneConfig.gestures = null;
+    return route.sceneConfig || sceneConfig;
   }
 
   renderScene(route, navigator) {
