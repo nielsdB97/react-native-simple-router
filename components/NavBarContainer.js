@@ -29,6 +29,7 @@ const propTypes = {
   titleStyle: Text.propTypes.style,
   toBack: PropTypes.func.isRequired,
   toRoute: PropTypes.func.isRequired,
+  cornerIconCount: PropTypes.number,
 };
 
 const styles = StyleSheet.create({
@@ -153,6 +154,7 @@ class NavBarContainer extends React.Component {
           rightProps={this.props.rightProps}
           titleProps={this.props.titleProps}
           customAction={this.customAction}
+          cornerIconCount={this.props.cornerIconCount}
         />
       );
     } else {
@@ -173,6 +175,7 @@ class NavBarContainer extends React.Component {
           rightProps={this.props.rightProps}
           titleProps={this.props.titleProps}
           customAction={this.customAction}
+          cornerIconCount={this.props.cornerIconCount}
         />
       );
     }

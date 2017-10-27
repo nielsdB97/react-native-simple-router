@@ -27,6 +27,7 @@ const propTypes = {
   titleProps: PropTypes.object,
   titleStyle: Text.propTypes.style,
   willDisappear: PropTypes.bool,
+  cornerIconCount: PropTypes.number,
 };
 
 const styles = StyleSheet.create({
@@ -252,11 +253,21 @@ class NavBarContent extends React.Component {
       );
     }
 
-    titleComponent = (
-      <View style={{ flex: 6 }}>
-        {titleContent}
-      </View>
-    );
+    if (this.props.route.cornerIconCount > 2) {
+      titleComponent = null;
+    } else if (this.props.route.cornerIconCount === 2) {
+      titleComponent = (
+        <View style={{ flex: 3 }}>
+          {titleContent}
+        </View>
+      );
+    } else {
+      titleComponent = (
+        <View style={{ flex: 6 }}>
+          {titleContent}
+        </View>
+      );
+    }
 
     if (this.props.route.trans === true) {
       trans = { backgroundColor: 'transparent', borderBottomWidth: 0 };
