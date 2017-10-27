@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   corner: {
     flex: 1,
     flexDirection: 'row',
+    justifyContent: 'flex-end',
     alignItems: 'center',
   },
   buttonTextLeft: {
