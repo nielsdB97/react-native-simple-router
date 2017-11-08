@@ -2,6 +2,7 @@ import React from 'react';
 import {
   StyleSheet,
   View,
+  ViewPropTypes,
   Platform,
   Text,
   StatusBar,
@@ -17,13 +18,13 @@ import _ from 'underscore';
 
 const propTypes = {
   backButtonComponent: PropTypes.func,
-  bgStyle: View.propTypes.style,
+  bgStyle: ViewPropTypes.style,
   borderBottomWidth: PropTypes.number,
   borderColor: PropTypes.string,
   customAction: PropTypes.func,
   firstRoute: PropTypes.object.isRequired,
   handleBackAndroid: PropTypes.bool,
-  headerStyle: View.propTypes.style,
+  headerStyle: ViewPropTypes.style,
   hideNavigationBar: PropTypes.bool,
   noStatusBar: PropTypes.bool,
   rightCorner: PropTypes.func,

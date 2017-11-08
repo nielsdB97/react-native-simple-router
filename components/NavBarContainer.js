@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   View,
+  ViewPropTypes,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
@@ -25,7 +26,7 @@ const propTypes = {
   resetToRoute: PropTypes.func.isRequired,
   rightCorner: PropTypes.func,
   rightProps: PropTypes.object,
-  style: View.propTypes.style,
+  style: ViewPropTypes.style,
   titleProps: PropTypes.object,
   titleStyle: Text.propTypes.style,
   toBack: PropTypes.func.isRequired,
