@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   BackHandler,
   Platform,
@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 
+import PropTypes from 'prop-types';
 import NavBarContent from './NavBarContent';
 import * as Styles from '../styles';
 

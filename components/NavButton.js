@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   Text,
   TouchableHighlight,
   View,
 } from 'react-native';
-
+import PropTypes from 'prop-types';
 const propTypes = {
   backButtonComponent: PropTypes.func,
   onPress: PropTypes.func.isRequired,

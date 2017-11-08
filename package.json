@@ -34,8 +34,9 @@
   "homepage": "https://github.com/react-native-simple-router-community/react-native-simple-router",
   "dependencies": {
     "aspect-js": "^1.0.3",
-    "underscore": "^1.8.3",
-    "react-native-deprecated-custom-components": "^0.1.0"
+    "prop-types": "^15.6.0",
+    "react-native-deprecated-custom-components": "^0.1.0",
+    "underscore": "^1.8.3"
   },
   "peerDependencies": {
     "react": "*",

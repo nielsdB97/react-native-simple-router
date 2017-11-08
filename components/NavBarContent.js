@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   Animated,
   Easing,
@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 import NavButton from './NavButton';
 import * as Styles from '../styles';
 

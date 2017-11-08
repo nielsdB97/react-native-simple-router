@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   View,
@@ -6,7 +6,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
+import PropTypes from 'prop-types';
 import { Navigator } from 'react-native-deprecated-custom-components';
 import EventEmitter from 'react-native/Libraries/vendor/emitter/EventEmitter';
 
