@@ -261,7 +261,7 @@ class NavBarContent extends React.Component {
     }
 
     titleComponent = (
-      <View style={{ flex: 3 }}>
+      <View style={{ flex: 2 }}>
         {titleContent}
       </View>
     );
