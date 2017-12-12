@@ -39,7 +39,7 @@ class NavButton extends React.Component {
 
     if (this.props.backButtonComponent) {
       BackButton = this.props.backButtonComponent;
-      backButton = <View><BackButton /></View>;
+      backButton = <View><BackButton previousRouteName={this.props.previousRoute.name} /></View>;
     } else {
       backButton = <Text style={this.styles.navbarText}>Back</Text>;
     }
