@@ -162,6 +162,7 @@ class NavBarContainer extends React.Component {
         <NavBarContent
           route={this.props.currentRoute}
           backButtonComponent={this.props.backButtonComponent}
+          previousRoute={this.state.previousRoute}
           rightCorner={this.props.rightCorner}
           titleStyle={this.props.titleStyle}
           borderBottomWidth={this.props.borderBottomWidth}

@@ -186,6 +186,7 @@ class NavBarContent extends React.Component {
         <NavButton
           onPress={this.goBack}
           backButtonComponent={this.props.backButtonComponent}
+          previousRoute={this.props.previousRoute}
           {...this.props.route.backButtonProps}
         />
       );
